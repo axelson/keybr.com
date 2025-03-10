@@ -6,7 +6,7 @@ You can import keyboard layout definitions from different sources:
 - You can also import keyboard layouts produced by the [Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134).
 - If none of these are available, you can write your own layout definition files.
 
-Whatever path you choose, the entry point to adding new keyboard layouts is the <nobr>`keyboard-generators`</nobr> package.
+Whatever path you choose, the entry point to adding new keyboard layouts is the <nobr>`keybr-generators`</nobr> package.
 It contains the scripts which take keyboard layout definitions in various formats and generate TypeScript files with the same layouts converted into our own internal representation.
 To start the generator, run the following shell commands:
 
