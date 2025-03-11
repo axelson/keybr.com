@@ -43,8 +43,8 @@ export class ZoneMod implements EnumItem {
 
 export class Geometry implements EnumItem {
   static readonly ANSI_101 = new Geometry(
-    "ansi101", //
-    "ANSI 101",
+    "ansi101",
+    "ANSI 101a",
     "staggered",
     ZoneMod.ALL,
   );

@@ -1,289 +1,361 @@
 import { type GeometryDict } from "../types.ts";
 
 export const MATRIX: GeometryDict = {
-  // ---
-  Equal: {
+  // Left hand Row 1
+  LH_C6R1: {
     x: 0,
-    y: 0,
-    w: 1.5,
-    h: 1,
+    y: 0.5,
     zones: ["pinky", "left", "digit"],
   },
-  Digit1: {
-    x: 1.5,
-    y: 0,
+  LH_C5R1: {
+    x: 1,
+    y: 0.5,
     zones: ["pinky", "left", "digit"],
   },
-  Digit2: {
-    x: 2.5,
+  LH_C4R1: {
+    x: 2,
     y: 0,
     zones: ["ring", "left", "digit"],
   },
-  Digit3: {
-    x: 3.5,
+  LH_C3R1: {
+    x: 3,
     y: 0,
     zones: ["middle", "left", "digit"],
   },
-  Digit4: {
-    x: 4.5,
+  LH_C2R1: {
+    x: 4,
     y: 0,
     zones: ["leftIndex", "left", "digit"],
   },
-  Digit5: {
-    x: 5.5,
-    y: 0,
+  // Left hand Row 2
+  LH_C6R2: {
+    x: 0,
+    y: 1.5,
+    zones: ["pinky", "left", "digit"],
+  },
+  LH_C5R2: {
+    x: 1,
+    y: 1.5,
+    zones: ["pinky", "left", "digit"],
+  },
+  LH_C4R2: {
+    x: 2,
+    y: 1,
+    zones: ["ring", "left", "digit"],
+  },
+  LH_C3R2: {
+    x: 3,
+    y: 1,
+    zones: ["middle", "left", "digit"],
+  },
+  LH_C2R2: {
+    x: 4,
+    y: 1,
     zones: ["leftIndex", "left", "digit"],
   },
-  Digit6: {
-    x: 7.5,
+  LH_C1R2: {
+    x: 5,
+    y: 1,
+    zones: ["leftIndex", "left", "digit"],
+  },
+  // Left hand Row 3
+  LH_C6R3: {
+    x: 0,
+    y: 2.5,
+    zones: ["pinky", "left", "top"],
+  },
+  LH_C5R3: {
+    x: 1,
+    y: 2.5,
+    zones: ["pinky", "left", "top"],
+  },
+  LH_C4R3: {
+    x: 2,
+    y: 2,
+    zones: ["ring", "left", "top"],
+  },
+  LH_C3R3: {
+    x: 3,
+    y: 2,
+    zones: ["middle", "left", "top"],
+  },
+  LH_C2R3: {
+    x: 4,
+    y: 2,
+    zones: ["leftIndex", "left", "top"],
+  },
+  LH_C1R3: {
+    x: 5,
+    y: 2,
+    zones: ["leftIndex", "left", "top"],
+  },
+  // Left hand Row 4
+  LH_C6R4: {
+    x: 0,
+    y: 3.5,
+    zones: ["pinky", "left", "home"],
+  },
+  LH_C5R4: {
+    x: 1,
+    y: 3.5,
+    zones: ["pinky", "left", "home"],
+  },
+  LH_C4R4: {
+    x: 2,
+    y: 3,
+    zones: ["ring", "left", "home"],
+  },
+  LH_C3R4: {
+    x: 3,
+    y: 3,
+    zones: ["middle", "left", "home"],
+  },
+  LH_C2R4: {
+    x: 4,
+    y: 3,
+    zones: ["leftIndex", "left", "home"],
+  },
+  LH_C1R4: {
+    x: 5,
+    y: 3,
+    zones: ["leftIndex", "left", "home"],
+  },
+  // Left hand Row 5
+  LH_C6R5: {
+    x: 0,
+    y: 4.5,
+    zones: ["pinky", "left", "bottom"],
+  },
+  LH_C5R5: {
+    x: 1,
+    y: 4.5,
+    zones: ["pinky", "left", "bottom"],
+  },
+  LH_C4R5: {
+    x: 2,
+    y: 4,
+    zones: ["ring", "left", "bottom"],
+  },
+  LH_C3R5: {
+    x: 3,
+    y: 4,
+    zones: ["middle", "left", "bottom"],
+  },
+  LH_C2R5: {
+    x: 4,
+    y: 4,
+    zones: ["leftIndex", "left", "bottom"],
+  },
+  LH_C1R5: {
+    x: 5,
+    y: 4,
+    zones: ["leftIndex", "left", "bottom"],
+  },
+  // Left hand Row 6
+  LH_C6R6: {
+    x: 0,
+    y: 5.5,
+    zones: ["pinky", "left", "bottom"],
+  },
+  LH_C5R6: {
+    x: 1,
+    y: 5.5,
+    zones: ["pinky", "left", "bottom"],
+  },
+  LH_C4R6: {
+    x: 2,
+    y: 5,
+    zones: ["ring", "left", "bottom"],
+  },
+  LH_C3R6: {
+    x: 3,
+    y: 5,
+    zones: ["middle", "left", "bottom"],
+  },
+  LH_C2R6: {
+    x: 4,
+    y: 5,
+    zones: ["leftIndex", "left", "bottom"],
+  },
+  // Right hand Row 1
+  RH_C2R1: {
+    x: 9,
     y: 0,
     zones: ["rightIndex", "right", "digit"],
   },
-  Digit7: {
-    x: 8.5,
-    y: 0,
-    zones: ["rightIndex", "right", "digit"],
-  },
-  Digit8: {
-    x: 9.5,
+  RH_C3R1: {
+    x: 10,
     y: 0,
     zones: ["middle", "right", "digit"],
   },
-  Digit9: {
-    x: 10.5,
+  RH_C4R1: {
+    x: 11,
     y: 0,
     zones: ["ring", "right", "digit"],
   },
-  Digit0: {
-    x: 11.5,
-    y: 0,
+  RH_C5R1: {
+    x: 12,
+    y: 0.5,
     zones: ["pinky", "right", "digit"],
   },
-  Minus: {
-    x: 12.5,
-    y: 0,
-    w: 1.5,
-    h: 1,
+  RH_C6R1: {
+    x: 13,
+    y: 0.5,
     zones: ["pinky", "right", "digit"],
   },
-  // ---
-  Tab: {
-    x: 0,
+
+  // Right hand Row 2
+  RH_C1R2: {
+    x: 8,
     y: 1,
-    w: 1.5,
-    h: 1,
-    labels: [{ text: "Tab" }],
-    zones: ["pinky", "left", "top"],
+    zones: ["rightIndex", "right", "digit"],
   },
-  KeyQ: {
-    x: 1.5,
+  RH_C2R2: {
+    x: 9,
     y: 1,
-    zones: ["pinky", "left", "top"],
+    zones: ["rightIndex", "right", "digit"],
   },
-  KeyW: {
-    x: 2.5,
+  RH_C3R2: {
+    x: 10,
     y: 1,
-    zones: ["ring", "left", "top"],
+    zones: ["middle", "right", "digit"],
   },
-  KeyE: {
-    x: 3.5,
+  RH_C4R2: {
+    x: 11,
     y: 1,
-    zones: ["middle", "left", "top"],
+    zones: ["ring", "right", "digit"],
   },
-  KeyR: {
-    x: 4.5,
-    y: 1,
-    zones: ["leftIndex", "left", "top"],
+  RH_C5R2: {
+    x: 12,
+    y: 1.5,
+    zones: ["pinky", "right", "digit"],
   },
-  KeyT: {
-    x: 5.5,
-    y: 1,
-    zones: ["leftIndex", "left", "top"],
+  RH_C6R2: {
+    x: 13,
+    y: 1.5,
+    zones: ["pinky", "right", "digit"],
   },
-  KeyY: {
-    x: 7.5,
-    y: 1,
+
+  // Right hand Row 3
+  RH_C1R3: {
+    x: 8,
+    y: 2,
     zones: ["rightIndex", "right", "top"],
   },
-  KeyU: {
-    x: 8.5,
-    y: 1,
+  RH_C2R3: {
+    x: 9,
+    y: 2,
     zones: ["rightIndex", "right", "top"],
   },
-  KeyI: {
-    x: 9.5,
-    y: 1,
+  RH_C3R3: {
+    x: 10,
+    y: 2,
     zones: ["middle", "right", "top"],
   },
-  KeyO: {
-    x: 10.5,
-    y: 1,
+  RH_C4R3: {
+    x: 11,
+    y: 2,
     zones: ["ring", "right", "top"],
   },
-  KeyP: {
-    x: 11.5,
-    y: 1,
+  RH_C5R3: {
+    x: 12,
+    y: 2.5,
     zones: ["pinky", "right", "top"],
   },
-  Backslash: {
-    x: 12.5,
-    y: 1,
-    w: 1.5,
-    h: 1,
+  RH_C6R3: {
+    x: 13,
+    y: 2.5,
     zones: ["pinky", "right", "top"],
   },
-  // ---
-  CapsLock: {
-    x: 0,
-    y: 2,
-    w: 1.5,
-    h: 1,
-    labels: [{ text: "Caps Lock" }],
-    zones: ["pinky", "left", "home"],
-  },
-  KeyA: {
-    x: 1.5,
-    y: 2,
-    zones: ["pinky", "left", "home"],
-  },
-  KeyS: {
-    x: 2.5,
-    y: 2,
-    zones: ["ring", "left", "home"],
-  },
-  KeyD: {
-    x: 3.5,
-    y: 2,
-    zones: ["middle", "left", "home"],
-  },
-  KeyF: {
-    x: 4.5,
-    y: 2,
-    zones: ["leftIndex", "left", "home"],
-    homing: true,
-  },
-  KeyG: {
-    x: 5.5,
-    y: 2,
-    zones: ["leftIndex", "left", "home"],
-  },
-  KeyH: {
-    x: 7.5,
-    y: 2,
+
+  // Right hand Row 4
+  RH_C1R4: {
+    x: 8,
+    y: 3,
     zones: ["rightIndex", "right", "home"],
   },
-  KeyJ: {
-    x: 8.5,
-    y: 2,
+  RH_C2R4: {
+    x: 9,
+    y: 3,
     zones: ["rightIndex", "right", "home"],
-    homing: true,
   },
-  KeyK: {
-    x: 9.5,
-    y: 2,
+  RH_C3R4: {
+    x: 10,
+    y: 3,
     zones: ["middle", "right", "home"],
   },
-  KeyL: {
-    x: 10.5,
-    y: 2,
+  RH_C4R4: {
+    x: 11,
+    y: 3,
     zones: ["ring", "right", "home"],
   },
-  Semicolon: {
-    x: 11.5,
-    y: 2,
+  RH_C5R4: {
+    x: 12,
+    y: 3.5,
     zones: ["pinky", "right", "home"],
   },
-  Quote: {
-    x: 12.5,
-    y: 2,
-    w: 1.5,
-    h: 1,
+  RH_C6R4: {
+    x: 13,
+    y: 3.5,
     zones: ["pinky", "right", "home"],
   },
-  // ---
-  ShiftLeft: {
-    x: 0,
-    y: 3,
-    w: 1.5,
-    h: 1,
-    labels: [{ text: "Shift" }],
-    zones: ["pinky", "left", "bottom"],
-  },
-  KeyZ: {
-    x: 1.5,
-    y: 3,
-    zones: ["pinky", "left", "bottom"],
-  },
-  KeyX: {
-    x: 2.5,
-    y: 3,
-    zones: ["ring", "left", "bottom"],
-  },
-  KeyC: {
-    x: 3.5,
-    y: 3,
-    zones: ["middle", "left", "bottom"],
-  },
-  KeyV: {
-    x: 4.5,
-    y: 3,
-    zones: ["leftIndex", "left", "bottom"],
-  },
-  KeyB: {
-    x: 5.5,
-    y: 3,
-    zones: ["leftIndex", "left", "bottom"],
-  },
-  KeyN: {
-    x: 7.5,
-    y: 3,
+
+  // Right hand Row 5
+  RH_C1R5: {
+    x: 8,
+    y: 4,
     zones: ["rightIndex", "right", "bottom"],
   },
-  KeyM: {
-    x: 8.5,
-    y: 3,
+  RH_C2R5: {
+    x: 9,
+    y: 4,
     zones: ["rightIndex", "right", "bottom"],
   },
-  Comma: {
-    x: 9.5,
-    y: 3,
+  RH_C3R5: {
+    x: 10,
+    y: 4,
     zones: ["middle", "right", "bottom"],
   },
-  Period: {
-    x: 10.5,
-    y: 3,
+  RH_C4R5: {
+    x: 11,
+    y: 4,
     zones: ["ring", "right", "bottom"],
   },
-  Slash: {
-    x: 11.5,
-    y: 3,
+  RH_C5R5: {
+    x: 12,
+    y: 4.5,
     zones: ["pinky", "right", "bottom"],
   },
-  ShiftRight: {
-    x: 12.5,
-    y: 3,
-    w: 1.5,
-    labels: [{ text: "Shift" }],
+  RH_C6R5: {
+    x: 13,
+    y: 4.5,
     zones: ["pinky", "right", "bottom"],
   },
-  ThumbClusterLeft1: {
-    x: 4.5,
-    y: 4,
-    zones: ["thumb", "left", "bottom"],
+
+  // Right hand Row 6
+  RH_C2R6: {
+    x: 9,
+    y: 5,
+    zones: ["rightIndex", "right", "bottom"],
   },
-  ThumbClusterLeft2: {
-    x: 5.5,
-    y: 4,
-    zones: ["thumb", "left", "bottom"],
+  RH_C3R6: {
+    x: 10,
+    y: 5,
+    zones: ["middle", "right", "bottom"],
   },
-  ThumbClusterRight1: {
-    x: 7.5,
-    y: 4,
-    zones: ["thumb", "right", "bottom"],
+  RH_C4R6: {
+    x: 11,
+    y: 5,
+    zones: ["ring", "right", "bottom"],
   },
-  ThumbClusterRight2: {
-    x: 8.5,
-    y: 4,
-    zones: ["thumb", "right", "bottom"],
+  RH_C5R6: {
+    x: 12,
+    y: 5.5,
+    zones: ["pinky", "right", "bottom"],
+  },
+  RH_C6R6: {
+    x: 13,
+    y: 5.5,
+    zones: ["pinky", "right", "bottom"],
   },
 };
