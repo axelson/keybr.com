@@ -47,10 +47,18 @@ function generateKeyboardGeometry(row_offset = 0.5, halves_offset = 2) {
       else if (col === 2) fingerZone = "leftIndex";
       else if (col === 1) fingerZone = "leftIndex";
 
+      let fingerRow = "";
+      if (row === 1) fingerRow = "digit";
+      else if (row === 2) fingerRow = "digit";
+      else if (row === 3) fingerRow = "top";
+      else if (row === 4) fingerRow = "home";
+      else if (row === 5) fingerRow = "bottom";
+      else if (row === 6) fingerRow = "bottom";
+
       output += `  LH_C${col}R${row}: {\n`;
       output += `    x: ${x},\n`;
       output += `    y: ${y},\n`;
-      output += `    zones: ["${fingerZone}", "left", "digit"],\n`;
+      output += `    zones: ["${fingerZone}", "left", "${fingerRow}"],\n`;
       output += `  },\n`;
     }
   }
@@ -99,10 +107,18 @@ function generateKeyboardGeometry(row_offset = 0.5, halves_offset = 2) {
       else if (col === 2) fingerZone = "rightIndex";
       else if (col === 1) fingerZone = "rightIndex";
 
+      let fingerRow = "";
+      if (row === 1) fingerRow = "digit";
+      else if (row === 2) fingerRow = "digit";
+      else if (row === 3) fingerRow = "top";
+      else if (row === 4) fingerRow = "home";
+      else if (row === 5) fingerRow = "bottom";
+      else if (row === 6) fingerRow = "bottom";
+
       output += `  RH_C${col}R${row}: {\n`;
       output += `    x: ${x},\n`;
       output += `    y: ${y},\n`;
-      output += `    zones: ["${fingerZone}", "right", "digit"],\n`;
+      output += `    zones: ["${fingerZone}", "right", "${fingerRow}"],\n`;
       output += `  },\n`;
     }
 
